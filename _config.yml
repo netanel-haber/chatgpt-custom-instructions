@@ -1,9 +1,3 @@
 remote_theme: jekyll/minima # Just a reminder that chatpgt sucks and so still rocks: https://stackoverflow.com/a/70721593/12473000
 minima:
   skin: solarized-dark
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "hashable"
