@@ -1,0 +1,4 @@
+---
+layout: default
+---
+{{ content | replace: "<h3>", "<h3 id='{{ anchor_id }}'><a href='#{{ anchor_id }}' class='hash-link'>#</a> " | replace: "</h3>", "</h3>" }}
