@@ -41,7 +41,7 @@
       button.textContent = '📋';
       button.addEventListener('click', function () {
         navigator.clipboard.writeText(codeBlock.textContent).then(function () {
-          button.textContent = 'Copied!';
+          button.textContent = '✅';
           setTimeout(function () {
             button.textContent = '📋';
           }, 2000);
