@@ -1,4 +1,13 @@
 ---
 layout: default
 ---
-{{ content | replace: "<h3>", "<h3 id='{{ anchor_id }}'><a href='#{{ anchor_id }}' class='hash-link'>#</a> " | replace: "</h3>", "</h3>" }}
+{% assign content_with_ids = content %}
+{% for h4 in content | split: "<h4>" %}
+  {% if forloop.index > 1 %}
+    {% assign heading_parts = h4 | split: "</h4>" %}
+    {% assign heading_text = heading_parts[0] %}
+    {% assign anchor_id = heading_text | strip_html | normalize_whitespace | downcase | replace: ' ', '-' %}
+    {% assign content_with_ids = content_with_ids | replace: "<h4>" | append: heading_text | append: "</h4>", "<h4 id='" | append: anchor_id | append: "'><a href='#" | append: anchor_id | append: "' class='hash-link'>#</a> " | append: heading_parts[0] | append: "</h4>" %}
+  {% endif %}
+{% endfor %}
+{{ content_with_ids }}
