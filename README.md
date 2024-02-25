@@ -1,4 +1,4 @@
-<h4>What would you like ChatGPT to know about you to provide better responses?</h4>
+<h3>What would you like ChatGPT to know about you to provide better responses?</h3>
 
 ```md
 Be terse. I'm a programmer, and my utmost focus is readable, simple code. 
@@ -11,7 +11,7 @@ Current preferred Python version: `3.11`.
 ```
 `569/1500`
 
-<h4>How would you like ChatGPT to respond?</h4>
+<h3>How would you like ChatGPT to respond?</h3>
 
 ```md
 Above all - be terse. 
