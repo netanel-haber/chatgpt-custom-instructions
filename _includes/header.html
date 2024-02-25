@@ -16,7 +16,7 @@
     position: absolute;
     top: 5px;
     right: 5px;
-    background-color: #f5f5f5;
+    background-color: transparent;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -37,7 +37,7 @@
     codeBlocks.forEach(function (codeBlock) {
       const button = document.createElement('button');
       button.className = 'copy-button';
-      button.textContent = 'Copy';
+      button.textContent = '📋';
       button.addEventListener('click', function () {
         navigator.clipboard.writeText(codeBlock.textContent).then(function () {
           button.textContent = 'Copied!';
