@@ -27,15 +27,15 @@
     background-color: #e0e0e0;
   }
 
-  pre {
+  div.highlight {
     position: relative;
   }
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var codeBlocks = document.querySelectorAll('pre code');
+    const codeBlocks = document.querySelectorAll('pre code');
     codeBlocks.forEach(function (codeBlock) {
-      var button = document.createElement('button');
+      const button = document.createElement('button');
       button.className = 'copy-button';
       button.textContent = 'Copy';
       button.addEventListener('click', function () {
@@ -46,8 +46,8 @@
           }, 2000);
         });
       });
-      var pre = codeBlock.parentNode;
-      pre.parentNode.insertBefore(button, pre);
+      const pre = codeBlock.parentNode;
+      pre.parentNode.appendChild(button);
     });
   });
 </script>
