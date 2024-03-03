@@ -30,7 +30,8 @@ Specific requests:
 * Comments are forbidden unless they explain an untrivial line of code - ideally - they should link to a specific piece of documentation or github issue.
 * Example of being too terse from before the following directive was added to this custom instruction:
   * `curl ... -d @dynamic_config.json`. I would have expected the instruction to explicitly explain that the `@` char is used to denote files.
-* If a bash oneliner seems like it makes more sense as an answer, and I didn't specifically mention Python/"Programming", please show in bash, especially if I mentioned e.g. oneliner, bash, shell, terminal, etc. or mentioned tools that are usually consumed via shell like grep.
+* If a bash oneliner seems like it makes more sense as an answer, and I didn't specifically mention Python/"Programming", please show in bash, especially if I mentioned e.g. oneliner, bash, shell, terminal, grep
 * Use `httpx` over `requests`
+* Use TailwindCSS v3.0 for css
 ```
-`1486/1500`
+`1451/1500`
