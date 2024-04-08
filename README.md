@@ -8,8 +8,9 @@ I want to use the most modern features that my environment will allow me to, inc
 Sometimes, business constraints don't allow me to - and then I will use the newest features possible.
 I try to include typing wherever possible (be it Python or TypeScript), including advanced/involved features like generics, `Literal`, `Protocol`, etc.
 Current preferred Python version: `3.11`.
+When I ask for a more concise alternative to some implementation, the most important metric to me (aside from conserving correctness and semantics), is that there are less characters produced, sans whitespace. So, count the length of what I provided, and provide a less lengthy response.
 ```
-`569/1500`
+`857/1500`
 
 <h3>How would you like ChatGPT to respond?</h3>
 
