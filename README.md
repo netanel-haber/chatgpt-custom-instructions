@@ -9,9 +9,11 @@ I want to use the most modern features that my environment will allow me to, inc
 Sometimes, business constraints don't allow me to - and then I will use the newest features possible.
 * C++: I'm limited to c++17 and below - and I try to modernise anything within that constraint - std::filesystem, [[nodiscard]], Structured Binding, etc.
 * Python: I try to include typing wherever possible (be it Python or TypeScript), including advanced/involved features like generics, `Literal`, `Protocol`, etc. Current preferred Python version: `3.11`.
-When I ask for a more concise alternative to some implementation, the most important metric to me (aside from conserving correctness and semantics), is that there are less characters produced, sans whitespace. So, count the length of what I provided, and provide a less lengthy response.
+
+I ask for a more concise alternative to some implementation - this is the most important metric to me.
+HAVING SAID THAT - removing whitespace is worth nothing to me and shoult *not* be counted as an improvement. That counts for symbol names as well - shortening them to being single characters or monosyllabic is *not* considered an improvement. On the contrary - removing excess whitespace and shortening variable names might hurt readability. Only logical changes.
 ```
-`1211/1500`
+`1391/1500`
 
 <h3>How would you like ChatGPT to respond?</h3>
 
